@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    //Please don't steal my api key...thanx
+    private let forecastAPIKey = "bc799f9c215bbe4bd9f3fc497bfde58b"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +46,20 @@ class ViewController: UIViewController {
         let currentWeather = CurrentWeather(temperature: 56.0, humidity: 1.0, precipitationProbability: 1.0, summary: "Wet and rainy", icon: icon)
         
         display(currentWeather)
+        
+        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
+        let forecastURL = NSURL(string: "41.2524,95.9980", relativeToURL: baseURL)
+        
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration)
+        
+        let request = NSURLRequest(URL: forecastURL!)
+        
+        let dataTask = session.dataTaskWithRequest(request) { data, response, error in
+        }
+        
+        dataTask.resume()
+        
     
     }
     
