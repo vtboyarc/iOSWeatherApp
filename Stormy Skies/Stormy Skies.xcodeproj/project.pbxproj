@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC37E9B01D5E7DDF00AC7551 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37E9AF1D5E7DDF00AC7551 /* CurrentWeather.swift */; };
+		BC37E9B31D5E7FC200AC7551 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC37E9B21D5E7FC200AC7551 /* WeatherIcon.swift */; };
 		BCD3153C1D5E72E600432B0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3153B1D5E72E600432B0B /* AppDelegate.swift */; };
 		BCD3153E1D5E72E600432B0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD3153D1D5E72E600432B0B /* ViewController.swift */; };
 		BCD3154E1D5E735800432B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD3154D1D5E735800432B0B /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC37E9AF1D5E7DDF00AC7551 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		BC37E9B21D5E7FC200AC7551 /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		BCD315381D5E72E600432B0B /* Stormy Skies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stormy Skies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD3153B1D5E72E600432B0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD3153D1D5E72E600432B0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC37E9B11D5E7F9F00AC7551 /* Weather Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC37E9AF1D5E7DDF00AC7551 /* CurrentWeather.swift */,
+				BC37E9B21D5E7FC200AC7551 /* WeatherIcon.swift */,
+			);
+			name = "Weather Model";
+			sourceTree = "<group>";
+		};
 		BCD3152F1D5E72E600432B0B = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +67,7 @@
 		BCD3153A1D5E72E600432B0B /* Stormy Skies */ = {
 			isa = PBXGroup;
 			children = (
+				BC37E9B11D5E7F9F00AC7551 /* Weather Model */,
 				BCD3153B1D5E72E600432B0B /* AppDelegate.swift */,
 				BCD3153D1D5E72E600432B0B /* ViewController.swift */,
 				BCD3154D1D5E735800432B0B /* Main.storyboard */,
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD3153E1D5E72E600432B0B /* ViewController.swift in Sources */,
+				BC37E9B31D5E7FC200AC7551 /* WeatherIcon.swift in Sources */,
+				BC37E9B01D5E7DDF00AC7551 /* CurrentWeather.swift in Sources */,
 				BCD3153C1D5E72E600432B0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +283,7 @@
 				BCD3154C1D5E72E600432B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
